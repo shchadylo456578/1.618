@@ -7,88 +7,70 @@
 </head>
 <body>
   <div class="dots-animate"></div>
-  <div class="debag">
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </div>
+  <!--include partials/_debag-->
   <!--TODO: LOGO-->
+  <div class="logo"><img src="/images/logo.png" alt="logo" style="width: 41px; height: 360px;"></div>
   <div class="wrapper">
-    <div class="container">
-      <!--.logo-->
-      <!--  img(src="/images/logo.png" alt="logo" style="width: 41px; height: 360px;")-->
-      <div class="main-page">
-        <!--TODO: HEADER TEXT-->
+    <div class="main-page">
+      <!--TODO: HEADER TEXT-->
+      <div class="header">
         <div class="header-text"><a href="#">Ви мрієте<br>Ми проектуємо</a>
           <p>Раціональні, прості та практичні проекти квартир, будинків, офісів, громадських закладів та інших споруд, а також їх комплексне втілення.</p>
         </div>
         <!--TODO: NAVBAR-->
         <div class="navbar">
           <ul>
-            <li><a class="selected" href="#">Меню</a></li>
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Команда</a></li>
-            <li><a href="#">Портфоліо</a></li>
-            <li><a href="#">Блог</a></li>
+            <li><a class="navigation selected" href="#">Меню</a></li>
+            <li><a class="navigation" href="#">Головна</a></li>
+            <li><a class="navigation" href="#">Команда</a></li>
+            <li><a class="navigation" href="#">Портфоліо</a></li>
+            <li><a class="navigation" href="#">Блог</a></li>
             <li><a class="en-link" href="#">English version</a></li>
           </ul>
         </div>
-        <!--TODO: SLIDER (need add text for photo)-->
-        <div id="slider-container">
-          <div class="slider">
-            <div class="image-slide"><img src="/images/photo-slider-1.png" alt="#" style="width: 100%;">
-              <!--h3.slider-text Квартира з алюмінієвим плінтусом-->
-            </div>
-            <div class="image-slide active"><img src="/images/photo-slider-2.png" alt="#" style="width: 100%;">
-              <!--h3.slider-text Гараж-->
-            </div>
+      </div>
+      <!--TODO: SLIDER (need add text for photo)-->
+      <div id="slider-container">
+        <div class="slider">
+          <div class="image-slide active"><img src="/images/photo-slider-1.png" alt="#" style="width: 100%;">
+            <h3 class="slider-text">Квартира з алюмінієвим плінтусом</h3>
           </div>
-          <div class="slider-buttons">
-            <div class="prev-rel">
-              <div id="prev">Попередній<br>проект</div>
-            </div>
-            <div class="prev-rel-1">
-              <div id="next">Наступний<br>проект</div>
-            </div>
+          <div class="image-slide"><img src="/images/photo-slider-2.png" alt="#" style="width: 100%;">
+            <h3 class="slider-text">Гараж</h3>
           </div>
         </div>
-        <!--TODO: ARTICLE-->
-        <div class="main-article">
-          <div class="main-article-title">Ось як ми працюємо</div>
-          <div class="main-article-columns">
-            <div class="column column-1">
-              <h2>01 Консультація</h2>
-              <p>Безкоштовна консультація у нас в гостях або на вашому об’єкті.</p>
-            </div>
-            <div class="column column-2">
-              <h2>02  Концепт</h2>
-              <p>Наше бачення найкращого рішення ваших завдань, включаючи варіанти планування, скетчі або фото подібних рішень.</p>
-            </div>
-            <div class="column column-3">
-              <h2>03 Проектування і дизайн</h2>
-              <p>Інженерія, розробка планування та необхідних креслень. Розрахунок енергоефективності. Дизайн інтер’єру та екстер’єру, вибір кольорів та фактури матеріалів, меблів та елементів декору, погодження проектів та фотореалістичні 3D візуалізації.</p>
-            </div>
-            <div class="column column-4">
-              <h2>04 Ремонт чи будівництво</h2>
-              <p>Формування будівельних бригад. Управління проектом. Закупівля і доставка будматеріалів. Вивіз та утилізація будівельного сміття. Розробка додаткових креслень. Контроль якості і авторський нагляд.</p>
-            </div>
-            <div class="column column-5">
-              <h2>05 Підтримка</h2>
-              <p>Гарантійне обслуговування. Внесення змін та доповнень у проекти, професійні консультації та супровід будівництва.</p>
-            </div>
+        <div class="slider-buttons">
+          <div class="prev-rel">
+            <div id="prev">Попередній<br>проект</div>
+          </div>
+          <div class="prev-rel-1">
+            <div id="next">Наступний<br>проект</div>
+          </div>
+        </div>
+      </div>
+      <!--TODO: ARTICLE-->
+      <div class="main-article">
+        <div class="main-article-title">Ось як ми працюємо</div>
+        <div class="main-article-columns">
+          <div class="column column-1">
+            <h2>01 Консультація</h2>
+            <p>Безкоштовна консультація у нас в гостях або на вашому об’єкті.</p>
+          </div>
+          <div class="column column-2">
+            <h2>02  Концепт</h2>
+            <p>Наше бачення найкращого рішення ваших завдань, включаючи варіанти планування, скетчі або фото подібних рішень.</p>
+          </div>
+          <div class="column column-3">
+            <h2>03 Проектування і дизайн</h2>
+            <p>Інженерія, розробка планування та необхідних креслень. Розрахунок енергоефективності. Дизайн інтер’єру та екстер’єру, вибір кольорів та фактури матеріалів, меблів та елементів декору, погодження проектів та фотореалістичні 3D візуалізації.</p>
+          </div>
+          <div class="column column-4">
+            <h2>04 Ремонт чи будівництво</h2>
+            <p>Формування будівельних бригад. Управління проектом. Закупівля і доставка будматеріалів. Вивіз та утилізація будівельного сміття. Розробка додаткових креслень. Контроль якості і авторський нагляд.</p>
+          </div>
+          <div class="column column-5">
+            <h2>05 Підтримка</h2>
+            <p>Гарантійне обслуговування. Внесення змін та доповнень у проекти, професійні консультації та супровід будівництва.</p>
           </div>
         </div>
       </div>
@@ -96,28 +78,30 @@
   </div>
   <div class="footer">
     <div class="wrapper">
-      <div class="footer-logo">
-        <!--img(src="/images/logo-footer.png" alt="logo-footer")-->
-      </div>
-      <div class="footer-collection">
-        <div class="footer-title">Архітектурно-будівельна<br>майстерня ‘1.618’</div>
-        <div class="footer-items-name">
-          <div class="footer-items">
-            <div class="item">
-              <h2>Адреса:</h2><a href="#">м. Львів, вул. Жовківська 14</a>
+      <div class="footer-logo-line">
+        <div class="footer-collection">
+          <div class="footer-title">Архітектурно-будівельна<br>майстерня ‘1.618’</div>
+          <div class="footer-items-name">
+            <div class="footer-items">
+              <div class="item">
+                <h2>Адреса:</h2><a href="#">м. Львів, вул. Жовківська 14</a>
+              </div>
+              <div class="item">
+                <h2>E-mail:</h2><a href="#">ok@one618.pro</a>
+              </div>
             </div>
-            <div class="item">
-              <h2>E-mail:</h2><a href="#">ok@one618.pro</a>
+            <div class="footer-items">
+              <div class="item">
+                <h2>Олександр Гень</h2><a href"#>097 903 51 61</a>
+              </div>
+              <div class="item">
+                <h2>Андрій Рожило</h2><a href"#>050 540 49 00</a>
+              </div>
             </div>
           </div>
-          <div class="footer-items">
-            <div class="item">
-              <h2>Олександр Гень</h2><a href"#>097 903 51 61</a>
-            </div>
-            <div class="item">
-              <h2>Андрій Рожило</h2><a href"#>050 540 49 00</a>
-            </div>
-          </div>
+        </div>
+        <div class="footer-logo-down">
+          <div class="logoline-618"></div><img class="logo-618" src="/images/618.svg" alt="logo">
         </div>
       </div>
       <div class="footer-address-links"><a class="link" href="#">Google +</a><a class="link" href="#">Behance</a><a class="link" href="#">LinkedIn</a><a class="link" href="#">Facebook</a><a class="link" href="#">Pinterest</a><a class="link" href="#">Instagram</a></div>

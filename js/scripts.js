@@ -1,3 +1,29 @@
+// $(document).ready(function(){
+//
+//   function freshDot(){
+//     this.obj = document.createElement("div");
+//     this.obj.classList.add("box");
+//     this.obj.style.top = (window.innerHeight * Math.random()) + 'px';
+//     this.obj.style.left = (window.innerWidth * Math.random()) + 'px';
+//     this.size = Math.floor(5 * Math.random()) + 7;
+//     this.obj.style.height =  this.size + 'px';
+//     this.obj.style.width = this.size + 'px';
+//
+//     document.body.appendChild(this.obj);
+//   }
+//   var dot = [];
+//   for(var i = 0 ; i < 200 ; i++ ){
+//     dot.push(new freshDot());
+//   }
+//
+//   $(window).resize(function(){
+//     for(i=0;i<200;i++){
+//       document.body.removeChild(dot[i]);
+//     }
+//   });
+//
+// });
+
 // var smartgrid = require('smart-grid');
 //
 // /* It's principal settings in smart grid project */
@@ -115,11 +141,11 @@ btn_next.addEventListener('click', function() {
 });
 
 
-function myFunction() {
-  var x = document.getElementById('myDIV');
-  if (x.style.display === 'none') {
-    x.style.display = 'block';
-  } else {
-    x.style.display = 'none';
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById('myDIV');
+//   if (x.style.display === 'none') {
+//     x.style.display = 'block';
+//   } else {
+//     x.style.display = 'none';
+//   }
+// }

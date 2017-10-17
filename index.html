@@ -7,18 +7,33 @@
   <!--link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css')-->
 </head>
 <body>
-  <div class="dots-animate"></div>
+  <div id="dotsAnimate"></div>
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
+  <!--  #dot-->
   <!--include partials/_debag-->
   <!--TODO: LOGO-->
   <div class="wrapper">
-    <div class="logo"></div>
+    <div class="logo">
+      <div class="logo-part-1"><img src="images/logo-part-1.svg" alt="logo"></div>
+      <div class="logo-animate"></div>
+    </div>
     <div class="main-page">
       <!--TODO: HEADER TEXT-->
       <div class="header">
         <div class="header-text"><a href="#">Ви мрієте<br>Ми проектуємо</a>
           <p>Раціональні, прості та практичні проекти квартир, будинків, офісів, громадських закладів та інших споруд, а також їх комплексне втілення.</p>
         </div>
-        <!--TODO: NAVBAR-->
+      </div>
+      <!--TODO: NAVBAR-->
+      <div class="navbar">
         <div id="navbar">
           <ul>
             <li><a class="navigation selected" href="#">Меню</a></li>
@@ -30,51 +45,57 @@
           </ul>
         </div>
       </div>
-      <!--TODO: SLIDER (need add text for photo)-->
-      <div id="slider-container">
-        <div class="slider">
-          <div class="image-slide active"><img src="images/photo-slider-1.png" alt="#">
-            <h3 class="slider-text">Квартира з алюмінієвим плінтусом</h3>
-          </div>
-          <div class="image-slide"><img src="images/photo-slider-2.png" alt="#">
-            <h3 class="slider-text">Як закинутий цех перетворити на офіс</h3>
-          </div>
+      <!--TODO: SLIDER-->
+    </div>
+    <div id="slider-container">
+      <div class="slider">
+        <div class="image-slide active"><img src="images/photo-slider-1.jpg" alt="#">
+          <h3 class="slider-text">Квартира з алюмінієвим плінтусом</h3>
         </div>
-        <div class="slider-buttons">
-          <div class="prev-rel">
-            <div id="prev">Попередній<br>проект</div>
-          </div>
-          <div class="prev-rel-1">
-            <div id="next">Наступний<br>проект</div>
-          </div>
+        <div class="image-slide"><img src="images/photo-slider-2.jpg" alt="#">
+          <h3 class="slider-text">Як закинутий цех перетворити на офіс</h3>
         </div>
       </div>
-      <!--TODO: ARTICLE-->
-      <div class="main-article">
-        <div class="main-article-title">Ось як ми працюємо</div>
-        <div class="main-article-columns">
-          <div class="article-columns">
-            <div class="column column-1">
-              <h2>01 Консультація</h2>
-              <p>Безкоштовна консультація у нас в гостях або на вашому об’єкті.</p>
+      <div class="slider-buttons">
+        <div class="prev-rel">
+          <div id="prev">Попередній<br>проект</div>
+        </div>
+        <div class="prev-rel-1">
+          <div id="next">Наступний<br>проект</div>
+        </div>
+        <!--TODO: ARTICLE-->
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="main-page">
+      <div class="header">
+        <div class="main-article">
+          <div class="main-article-title">Ось як ми працюємо</div>
+          <div class="main-article-columns">
+            <div class="article-columns">
+              <div class="column column-1">
+                <h2>01 Консультація</h2>
+                <p>Безкоштовна консультація у нас в гостях або на вашому об’єкті.</p>
+              </div>
+              <div class="column column-2">
+                <h2>02  Концепт</h2>
+                <p>Наше бачення найкращого рішення ваших завдань, включаючи варіанти планування, скетчі або фото подібних рішень.</p>
+              </div>
+              <div class="column column-3">
+                <h2>03 Проектування і дизайн</h2>
+                <p>Інженерія, розробка планування та необхідних креслень. Розрахунок енергоефективності. Дизайн інтер’єру та екстер’єру, вибір кольорів та фактури матеріалів, меблів та елементів декору, погодження проектів та фотореалістичні 3D візуалізації.</p>
+              </div>
             </div>
-            <div class="column column-2">
-              <h2>02  Концепт</h2>
-              <p>Наше бачення найкращого рішення ваших завдань, включаючи варіанти планування, скетчі або фото подібних рішень.</p>
-            </div>
-            <div class="column column-3">
-              <h2>03 Проектування і дизайн</h2>
-              <p>Інженерія, розробка планування та необхідних креслень. Розрахунок енергоефективності. Дизайн інтер’єру та екстер’єру, вибір кольорів та фактури матеріалів, меблів та елементів декору, погодження проектів та фотореалістичні 3D візуалізації.</p>
-            </div>
-          </div>
-          <div class="article-columns">
-            <div class="column column-4">
-              <h2>04 Ремонт чи будівництво</h2>
-              <p>Формування будівельних бригад. Управління проектом. Закупівля і доставка будматеріалів. Вивіз та утилізація будівельного сміття. Розробка додаткових креслень. Контроль якості і авторський нагляд.</p>
-            </div>
-            <div class="column column-5">
-              <h2>05 Підтримка</h2>
-              <p>Гарантійне обслуговування. Внесення змін та доповнень у проекти, професійні консультації та супровід будівництва.</p>
+            <div class="article-columns">
+              <div class="column column-4">
+                <h2>04 Ремонт чи будівництво</h2>
+                <p>Формування будівельних бригад. Управління проектом. Закупівля і доставка будматеріалів. Вивіз та утилізація будівельного сміття. Розробка додаткових креслень. Контроль якості і авторський нагляд.</p>
+              </div>
+              <div class="column column-5">
+                <h2>05 Підтримка</h2>
+                <p>Гарантійне обслуговування. Внесення змін та доповнень у проекти, професійні консультації та супровід будівництва.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -125,6 +146,5 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!--script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js')-->
   <script type="text/javascript" src="js/scripts.js"></script>
 </body>

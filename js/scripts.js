@@ -1,11 +1,11 @@
 // $(document).ready(function(){
 //
 //   function freshDot(){
-//     this.obj = document.createElement("div");
+//     this.obj = document.getElementById("dot");
 //     this.obj.classList.add("box");
 //     this.obj.style.top = (window.innerHeight * Math.random()) + 'px';
 //     this.obj.style.left = (window.innerWidth * Math.random()) + 'px';
-//     this.size = Math.floor(5 * Math.random()) + 7;
+//     this.size = Math.floor(0 * Math.random()) + 8;
 //     this.obj.style.height =  this.size + 'px';
 //     this.obj.style.width = this.size + 'px';
 //
@@ -15,14 +15,50 @@
 //   for(var i = 0 ; i < 200 ; i++ ){
 //     dot.push(new freshDot());
 //   }
-//
+//   /*
 //   $(window).resize(function(){
 //     for(i=0;i<200;i++){
 //       document.body.removeChild(dot[i]);
 //     }
 //   });
-//
+//   */
 // });
+
+$(window, document, undefined).ready(function() {
+
+  $('input').blur(function() {
+    var $this = $(this);
+    if ($this.val())
+      $this.addClass('used');
+    else
+      $this.removeClass('used');
+  });
+
+  var $ripples = $('.ripples');
+
+  $ripples.on('click.Ripples', function(e) {
+
+    var $this = $(this);
+    var $offset = $this.parent().offset();
+    var $circle = $this.find('.ripplesCircle');
+
+    var x = e.pageX - $offset.left;
+    var y = e.pageY - $offset.top;
+
+    $circle.css({
+      top: y + 'px',
+      left: x + 'px'
+    });
+
+    $this.addClass('is-active');
+
+  });
+
+  $ripples.on('animationend webkitAnimationEnd mozAnimationEnd oanimationend MSAnimationEnd', function(e) {
+    $(this).removeClass('is-active');
+  });
+
+});
 
 // var smartgrid = require('smart-grid');
 //
@@ -79,42 +115,43 @@
 //   mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
 //   container: {
 //     maxWidth: '1600px', /* max-width оn very large screen */
-//     fields: '18px' /* side fields */
+//     fields: '30px' /* side fields */
 //   },
 //   breakPoints: {
 //     xxlg: {
 //       width: '1920px',
-//       fields: '18px'
+//       offset: '30px'
 //     },
 //     xlg: {
 //       width: '1440px',
-//       fields: '18px'
+//       offset: '30px'
 //     },
 //     lg: {
 //       width: '1280px',
-//       fields: '14px'
+//       offset: '27px'
 //     },
 //     md: {
 //       width: '992px',
-//       fields: '8px'
+//       offset: '27px'
 //     },
 //     sm: {
 //       width: '768px',
-//       fields: '8px'
+//       offset: '16px'
 //     },
 //     xs: {
 //       width: '480px',
-//       fields: '5px'
+//       offset: '10px'
 //
 //     },
 //     xxs: {
 //       width: '320px',
-//       fields: '5px'
+//       offset: '10px'
 //
 //     }
 //   }
 // };
 // smartgrid('style/modules', settings);
+
 
 var btn_prev = document.getElementById('prev');
 var btn_next = document.getElementById('next');

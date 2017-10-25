@@ -4,39 +4,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>1.618</title>
   <link rel="stylesheet" href="css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-  <!--link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css')-->
 </head>
 <body>
-  <div id="dotsAnimate"></div>
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <!--  #dot-->
-  <div class="debag">
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
+  <div id="dotsAnimate">
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
+    <!--#dot-->
   </div>
+  <!--include partials/_debag-->
   <div class="wrapper">
     <div class="logo">
       <div class="logo-part-1"><img src="images/svg/logo-part-1.svg" alt="logo"></div>
@@ -64,12 +46,15 @@
       <!--TODO: SLIDER-->
       <div id="slider-container">
         <div class="slider">
-          <div class="image-slide active"><img src="images/main-page/photo-slider-1.jpg" alt="#">
-            <h3 class="slider-text">Квартира з алюмінієвим плінтусом</h3>
+          <div class="image-slide"><img src="images/main-page/photo-slider-1.jpg" alt="#">
+            <div class="caption">
+              <h3 class="slider-text">Квартира з алюмінієвим плінтусом</h3>
+            </div>
           </div>
-          <div class="image-slide"><img src="images/main-page/photo-slider-2.jpg" alt="#">
-            <h3 class="slider-text">Як закинутий цех перетворити на офіс</h3>
-          </div>
+          <!--.image-slide.active-->
+          <!--  img(src='images/main-page/photo-slider-2.jpg', alt='#')-->
+          <!--  .caption-->
+          <!--    h3.slider-text Як закинутий цех перетворити на офіс-->
         </div>
         <div class="slider-buttons">
           <div class="buttons">

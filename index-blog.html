@@ -6,18 +6,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div id="dotsAnimate">
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-    <!--#dot-->
-  </div>
+  <div id="dotsAnimate"></div>
   <!--include partials/_debag-->
   <div class="wrapper">
     <div class="logo">
@@ -31,10 +20,8 @@
             <h1>Блог 1.618</h1>
             <p>Ми обожнюємо ділитися, а особливо, коли це стосується улюбленої справи нашого життя. Тут ми викладаємо корисну інформацію про архітектуру, дизайн, будівництво та ремонти.<a href="index-subscribe.html"> Підпишіться на e-mail розсилку,</a> щоб не проґавити важливі новини.</p>
           </div>
-          <div class="blog-item-photo"><a href="index-article.html"><img src="images/blog-page/blog-photo-1.jpg" alt="blog-photo">
-              <div class="caption">
-                <h3>Переваги та недоліки життя в квартирі та заміському будинку</h3>
-              </div></a></div>
+          <div class="blog-item-photo"><a href="index-article.html">
+              <div class="item" data-content="Переваги та недоліки життя в квартирі та заміському будинку"><img src="images/blog-page/blog-photo-1.jpg" alt="blog-photo"></div></a></div>
           <div class="blog-link-items">
             <div class="items">
               <div class="item"><a href="#">Усе що ви повинні знати будівництво котеджу. Частина 2 - Фундаменти</a></div>
@@ -45,10 +32,8 @@
               <div class="item"><a href="#">Обережно, токсичні будматеріали шкідливі для здоров'я</a></div>
             </div>
           </div>
-          <div class="blog-item-photo"><a href="#"><img src="images/blog-page/blog-photo-2.jpg" alt="blog-photo">
-              <div class="caption">
-                <h3>Секрети вдалої кухні/ванної/гардеробу/…</h3>
-              </div></a></div>
+          <div class="blog-item-photo"><a href="#">
+              <div class="item" data-content="Секрети вдалої кухні/ванної/гардеробу/…"><img src="images/blog-page/blog-photo-2.jpg" alt="blog-photo"></div></a></div>
           <div class="blog-link-items">
             <div class="items">
               <div class="item"><a href="#">Як здешевити комуналку при ремонті квартир?</a></div>
@@ -61,13 +46,13 @@
           </div>
         </div>
         <div class="navbar">
+          <div class="navigation title" id="navbartitle">Меню</div>
           <div id="navbar">
             <ul>
-              <li><a class="navigation selected" href="#">Меню</a></li>
               <li><a class="navigation" href="index.html">Головна</a></li>
               <li><a class="navigation" href="index-team.html">Команда</a></li>
               <li><a class="navigation" href="index-portfolio.html">Портфоліо</a></li>
-              <li><a class="navigation" href="index-blog.html">Блог</a></li>
+              <li><a class="navigation nav-blog" href="index-blog.html">Блог</a></li>
               <li><a class="en-link" href="index-en.html">English version</a></li>
             </ul>
           </div>

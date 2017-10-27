@@ -1,28 +1,126 @@
-// $(document).ready(function(){
-//
-//   function freshDot(){
-//     this.obj = document.getElementById("dot");
-//     this.obj.classList.add("box");
-//     this.obj.style.top = (window.innerHeight * Math.random()) + 'px';
-//     this.obj.style.left = (window.innerWidth * Math.random()) + 'px';
-//     this.size = Math.floor(0 * Math.random()) + 8;
-//     this.obj.style.height =  this.size + 'px';
-//     this.obj.style.width = this.size + 'px';
-//
-//     document.body.appendChild(this.obj);
-//   }
-//   var dot = [];
-//   for(var i = 0 ; i < 200 ; i++ ){
-//     dot.push(new freshDot());
-//   }
-//   /*
-//   $(window).resize(function(){
-//     for(i=0;i<200;i++){
-//       document.body.removeChild(dot[i]);
-//     }
-//   });
-//   */
-// });
+(function(){
+
+    var lastScrollTop = 0;
+
+    $(window).scroll(function(event){
+
+       var st = $(this).scrollTop();
+
+        /*
+        *
+        *   MENU
+        *
+        */
+
+       var menu_bottom_line_show = $('.footer').position().top - $(window).height()/4;
+
+       if(st  > menu_bottom_line_show){
+
+            $('#navbartitle').show();
+
+        }else{
+
+            if (st > lastScrollTop){
+                // downscroll code
+                $('#navbartitle').hide(500);
+            } else {
+               // upscroll code
+               $('#navbartitle').show(300);
+            }
+
+        }
+
+        /*
+         *  Always hide menu list on scroll
+         *
+         */
+
+        $('#navbar').hide(500);
+
+
+
+        lastScrollTop = st;
+
+
+
+
+
+
+    });
+    /*
+     *
+     *  Menu button
+     *
+     *
+     */
+
+    $('#navbartitle').click(function(e){
+        $('#navbar').show(500);
+        $('#navbartitle').hide(500);
+    });
+
+    /**
+     *
+     *
+     *
+     * chenge color menu* */
+    // $('.navigation').click(function () {
+    //   if ($(this).hasClass('changeColorText')) {
+    //     $(this).removeClass('changeColorText');
+    //   } else {
+    //     $('.navigation').removeClass('changeColorText');
+    //     $(this).addClass('changeColorText');
+    //
+    //   }
+    // });
+})();
+
+
+$(document).ready(function(){
+
+  function freshDot(){
+    this.obj = document.createElement("div");
+
+    this.obj.classList.add("box");
+
+    var container = $('#dotsAnimate');
+
+
+    // console.log(container.innerHeight);
+    // console.log(container.innerHeight*Math.random());
+
+
+    this.obj.style.top = (container.height() * Math.random()) + 'px';
+    this.obj.style.left = (container.width() * Math.random()) + 'px';
+
+    // this.size = Math.floor(0 * Math.random()) + 8;
+    // this.size = 8;
+
+    // this.obj.style.height =  this.size + 'px';
+    // this.obj.style.width = this.size + 'px';
+
+    // document.body.appendChild(this.obj);  //
+    // console.log(this.obj);
+
+    container.append(this.obj);
+  }
+
+//   freshDot();
+  var dot = [];
+
+  for(var i = 0 ; i < 9 ; i++ ){
+    dot.push(new freshDot());
+  }
+
+
+  /*
+  $(window).resize(function(){
+    for(i=0;i<200;i++){
+      document.body.removeChild(dot[i]);
+    }
+  });
+  */
+});
 
 $(window, document, undefined).ready(function() {
 

@@ -4,17 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>1.618</title>
   <link rel="stylesheet" href="css/main.css">
-</head>
+</head><!-- GreenSock TweenMax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<!-- ScrollMagic GreenSock Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <body>
   <div id="dotsAnimate"></div>
   <!--include partials/_debag-->
   <div class="wrapper">
-    <div class="logo">
-      <div class="logo-part-1"><img src="images/svg/logo-part-1.svg" alt="logo"></div>
-      <div class="logo-animate"></div>
-    </div>
     <div class="main-page">
       <div class="header">
+        <div class="logo" id="logo">
+          <div class="logo-part-1"><img src="images/svg/logo-part-1.svg" alt="logo"></div>
+          <div class="logo-animate"></div>
+        </div>
         <div class="header-text">
           <h1 id="changeWords">Ви мрієте<br>Ми проектуємо</h1>
           <p>Раціональні, прості та практичні проекти квартир, будинків, офісів, громадських закладів та інших споруд, а також їх комплексне втілення.</p>
@@ -88,6 +93,10 @@
   <div class="footer">
     <div class="wrapper">
       <div class="footer-head">
+        <div class="logofoooter" id="logofooter">
+          <div class="logo-part-2"><img src="images/svg/logo-white.png" alt="logo"></div>
+          <div class="logo-animate"></div>
+        </div>
         <div class="footer-collection">
           <div class="footer-text">
             <h1>Архітектурно-будівельна<br>майстерня ‘1.618’</h1>

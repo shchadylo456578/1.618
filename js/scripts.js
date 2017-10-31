@@ -380,52 +380,52 @@ $(window, document, undefined).ready(function() {
 // smartgrid('style/modules', settings);
 
 
-// var smartgrid = require('smart-grid');
-//
-// /* It's principal settings in smart grid project */
-// var settings = {
-//   outputStyle: 'scss', /* less || scss || sass || styl */
-//   columns: 12, /* number of grid columns */
-//   offset: '30px', /* gutter width px || % */
-//   mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
-//   container: {
-//     maxWidth: '1600px', /* max-width оn very large screen */
-//     fields: '30px' /* side fields */
-//   },
-//   breakPoints: {
-//     xxlg: {
-//       width: '1920px',
-//       offset: '30px'
-//     },
-//     xlg: {
-//       width: '1440px',
-//       offset: '30px'
-//     },
-//     lg: {
-//       width: '1280px',
-//       offset: '27px'
-//     },
-//     md: {
-//       width: '992px',
-//       offset: '27px'
-//     },
-//     sm: {
-//       width: '768px',
-//       offset: '16px'
-//     },
-//     xs: {
-//       width: '480px',
-//       offset: '10px'
-//
-//     },
-//     xxs: {
-//       width: '320px',
-//       offset: '10px'
-//
-//     }
-//   }
-// };
-// smartgrid('style/modules', settings);
+var smartgrid = require('smart-grid');
+
+/* It's principal settings in smart grid project */
+var settings = {
+  outputStyle: 'scss', /* less || scss || sass || styl */
+  columns: 12, /* number of grid columns */
+  offset: '30px', /* gutter width px || % */
+  mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+  container: {
+    maxWidth: '1600px', /* max-width оn very large screen */
+    fields: '30px' /* side fields */
+  },
+  breakPoints: {
+    xxlg: {
+      width: '1920px',
+      offset: '30px'
+    },
+    xlg: {
+      width: '1440px',
+      offset: '30px'
+    },
+    lg: {
+      width: '1280px',
+      offset: '27px'
+    },
+    md: {
+      width: '992px',
+      offset: '27px'
+    },
+    sm: {
+      width: '768px',
+      offset: '16px'
+    },
+    xs: {
+      width: '480px',
+      offset: '10px'
+
+    },
+    xxs: {
+      width: '320px',
+      offset: '10px'
+
+    }
+  }
+};
+smartgrid('style/modules', settings);
 
 
 var btn_prev = document.getElementById('prev');
@@ -435,12 +435,12 @@ var i = 0;
 
 
 btn_next.addEventListener('click', function() {
-  images[i].classList.remove(".active");
+  images[i].classList.remove("active");
   i--;
   if(i < 0) {
     i = images.length - 1;
   }
-  images[i].classList.add('.active');
+  images[i].classList.add('active');
   TweenMax.fromTo(".active", 1, {scale: 1.1, boxShadow:"25px 0px 10px 20px rgba(0,0,0,0.59)", zIndex:100 }, {x: 800, scale:1,  boxShadow:"0px 0px 0px 0px rgba(0,0,0,0.59)" });
 
 

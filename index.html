@@ -3,6 +3,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>1.618</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+  <!--link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")-->
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -26,19 +29,11 @@
       </div>
       <!--TODO: SLIDER-->
       <div id="slider-container">
-        <div class="slider">
-          <div class="image-slide active" data-content="Квартира з алюмінієвим плінтусом"><img src="images/main-page/photo-slider-1.jpg" alt="#"></div>
-          <div class="image-slide" data-content="Як закинутий цех перетворити на офіс"><img src="images/main-page/photo-slider-2.jpg" alt="#"></div>
-        </div>
-        <div class="slider-buttons">
-          <div class="buttons">
-            <div class="prev-rel">
-              <div id="prev">Попередній<br>проект</div>
-            </div>
-            <div class="prev-rel-1">
-              <div id="next">Наступний<br>проект</div>
-            </div>
-          </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item image-slide" data-content="Квартира з алюмінієвим плінтусом"><img src="images/blog-page/blog-photo-2.jpg" alt="#"></div>
+          <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс"><img src="images/main-page/photo-slider-2.jpg" alt="#"></div>
+          <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс"><img src="images/main-page/photo-slider-3.jpg" alt="#"></div>
+          <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс"><img src="images/main-page/photo-slider-2.jpg" alt="#"></div>
         </div>
         <!--TODO: ARTICLE-->
       </div>
@@ -114,12 +109,13 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script><!-- GreenSock TweenMax -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/jquery.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/utils/Draggable.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/ScrollToPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/PixiPlugin.min.js"></script><!-- GreenSock TweenMax -->
-  <!--script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js')-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/PixiPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script><!-- ScrollMagic GreenSock Plugin -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>

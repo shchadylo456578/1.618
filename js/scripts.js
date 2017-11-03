@@ -380,81 +380,97 @@ $(window, document, undefined).ready(function() {
 // smartgrid('style/modules', settings);
 
 
-var smartgrid = require('smart-grid');
+// var smartgrid = require('smart-grid');
 
-/* It's principal settings in smart grid project */
-var settings = {
-  outputStyle: 'scss', /* less || scss || sass || styl */
-  columns: 12, /* number of grid columns */
-  offset: '30px', /* gutter width px || % */
-  mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
-  container: {
-    maxWidth: '1600px', /* max-width оn very large screen */
-    fields: '30px' /* side fields */
-  },
-  breakPoints: {
-    xxlg: {
-      width: '1920px',
-      offset: '30px'
-    },
-    xlg: {
-      width: '1440px',
-      offset: '30px'
-    },
-    lg: {
-      width: '1280px',
-      offset: '27px'
-    },
-    md: {
-      width: '992px',
-      offset: '27px'
-    },
-    sm: {
-      width: '768px',
-      offset: '16px'
-    },
-    xs: {
-      width: '480px',
-      offset: '10px'
+// /* It's principal settings in smart grid project */
+// var settings = {
+//   outputStyle: 'scss', /* less || scss || sass || styl */
+//   columns: 12, /* number of grid columns */
+//   offset: '30px', /* gutter width px || % */
+//   mobileFirst: false, /* mobileFirst ? 'min-width' : 'max-width' */
+//   container: {
+//     maxWidth: '1600px', /* max-width оn very large screen */
+//     fields: '30px' /* side fields */
+//   },
+//   breakPoints: {
+//     xxlg: {
+//       width: '1920px',
+//       offset: '30px'
+//     },
+//     xlg: {
+//       width: '1440px',
+//       offset: '30px'
+//     },
+//     lg: {
+//       width: '1280px',
+//       offset: '27px'
+//     },
+//     md: {
+//       width: '992px',
+//       offset: '27px'
+//     },
+//     sm: {
+//       width: '768px',
+//       offset: '16px'
+//     },
+//     xs: {
+//       width: '480px',
+//       offset: '10px'
 
-    },
-    xxs: {
-      width: '320px',
-      offset: '10px'
+//     },
+//     xxs: {
+//       width: '320px',
+//       offset: '10px'
 
-    }
-  }
-};
-smartgrid('style/modules', settings);
+//     }
+//   }
+// };
+// smartgrid('style/modules', settings);
 
 
 
 $(document).ready(function(){
-  var owl = $('.owl-carousel');
+
+
+  var owl = $('.owl-carousel'),
+      prev = $("#left"),
+      next = $("#right");
 
   owl.owlCarousel({
-    stagePadding: '50',
-    touchDrag  : false,
-    mouseDrag  : false,
-    smartSpeed:1000,
-    animateOut: 'bringOut',
-    animateIn: 'bringIn',
-    loop:false,
-    margin: 15,
-    nav:true,
-    navText:['<div id="prev">Попередній<br>проект</div>','<div id="next">Наступний<br>проект</div>'],
-    responsive: {
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
+        items : 2,
+        stagePadding: '60',
+        touchDrag  : false,
+        mouseDrag  : false,
+        smartSpeed: 20,
+        animateOut: 'bringOut',
+        animateIn: 'bringIn',
+        dots: false,
+        lazyLoad: true,
+        lazyContent: true,
+        loop: false,
+        margin: 30,
+        nav:true,
+        navText:['<div id="left">Попередній<br>проект</div>','<div id="right">Наступний<br>проект</div>'],
+        responsive: {
+            0:{
+                items:1,
+                stagePadding: '25',
+                margin: 10
+            },
+            768:{
+                items:1,
+                stagePadding: '40',
+                margin: 20
+
+            },
+            1280:{
+                items:1
+            },
+            1920:{
+                items:1
+            }
         }
-    }
-  });
+    });
 
   owl.on('change.owl.carousel', function(event) {
 

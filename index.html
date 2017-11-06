@@ -1,33 +1,86 @@
 <!DOCTYPE html>
+<html ⚡></html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <!--meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')-->
   <title>1.618</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+  <link rel="canonical" href="css/main.css">
   <!--link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")-->
-  <link rel="stylesheet" href="css/main.css">
+  <style amp-boilerplate="">
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+    
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate="">
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+      
+      
+      
+    </style>
+  </noscript>
 </head>
+<link rel="stylesheet" href="css/main.css">
 <body>
   <div id="dotsAnimate"></div>
-  <div class="debag">
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </div>
+  <!--include partials/_debag-->
   <div class="wrapper">
     <div class="logo-an">
       <div class="logo-pos"><img class="logo-part-1" src="images/svg/logo-part-1.svg" alt="logo">
@@ -51,10 +104,30 @@
       <div id="slider-container">
         <div class="carusel">
           <div class="owl-carousel owl-theme">
-            <div class="item image-slide" data-content="Квартира з алюмінієвим плінтусом"><img class="owl-lazy" data-src="images/blog-page/blog-photo-2.jpg" alt="Lazy Owl Image"></div>
-            <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс"><img class="owl-lazy" data-src="images/main-page/photo-slider-2.jpg" alt="Lazy Owl Image"></div>
-            <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс"><img class="owl-lazy" data-src="images/main-page/photo-slider-3.jpg" alt="Lazy Owl Image"></div>
-            <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс"><img class="owl-lazy" data-src="images/main-page/photo-slider-2.jpg" alt="Lazy Owl Image"></div>
+            <div class="item image-slide" data-content="Квартира з алюмінієвим плінтусом">
+              <amp-img src="images/blog-page/blog-photo-1.jpg" srcset="images/blog-page/blog-photo-1.jpg 1920w, images/blog-page/blog-photo-1.jpg 1280w, images/blog-page/blog-photo-1.jpg 768w,images/blog-page/blog-photo-1.jpg 375w" width="1300" height="735" layout="responsive" alt="AMP">
+                <div fallback>offline</div>
+                <noscript><img src="images/blog-page/blog-photo-1.jpg" width="1300" height="735" alt="AMP"></noscript>
+              </amp-img>
+            </div>
+            <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс">
+              <amp-img src="images/main-page/photo-slider-3.jpg" srcset="images/main-page/photo-slider-3.jpg 1920w, images/main-page/photo-slider-3.jpg 1280w, images/main-page/photo-slider-3.jpg 768w, images/main-page/photo-slider-3.jpg 375w" width="1300" height="735" layout="responsive" alt="AMP">
+                <div fallback>offline</div>
+                <noscript><img src="images/main-page/photo-slider-3.jpg" width="1300" height="735" alt="AMP"></noscript>
+              </amp-img>
+            </div>
+            <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс">
+              <amp-img src="images/main-page/photo-slider-3.jpg" srcset="images/main-page/photo-slider-3.jpg 1920w, images/main-page/photo-slider-3.jpg 1280w, images/main-page/photo-slider-3.jpg 768w, images/main-page/photo-slider-3.jpg 375w" width="1300" height="735" layout="responsive" alt="AMP">
+                <div fallback>offline</div>
+                <noscript><img src="images/main-page/photo-slider-3.jpg" width="1300" height="735" alt="AMP"></noscript>
+              </amp-img>
+            </div>
+            <div class="item image-slide" data-content="Як закинутий цех перетворити на офіс">
+              <amp-img src="images/blog-page/blog-photo-1.jpg" srcset="images/blog-page/blog-photo-1.jpg 1920w, images/blog-page/blog-photo-1.jpg 1280w, images/blog-page/blog-photo-1.jpg 768w, images/blog-page/blog-photo-1.jpg 375w" width="1300" height="735" layout="responsive" alt="AMP">
+                <div fallback>offline</div>
+                <noscript><img src="images/blog-page/blog-photo-1.jpg" width="1300" height="735" alt="AMP"></noscript>
+              </amp-img>
+            </div>
           </div>
           <div class="owl-nav">
             <div class="owl-prev">

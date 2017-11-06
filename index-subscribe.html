@@ -1,21 +1,93 @@
 <!DOCTYPE html>
+<html ⚡></html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <!--meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')-->
   <title>1.618</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
+  <link rel="canonical" href="css/main.css">
   <!--link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")-->
-  <link rel="stylesheet" href="css/main.css">
+  <style amp-boilerplate="">
+    body {
+      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      animation: -amp-start 8s steps(1, end) 0s 1 normal both
+    }
+    
+    @-webkit-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @-moz-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @-ms-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @-o-keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+    
+    @keyframes -amp-start {
+      from {
+        visibility: hidden
+      }
+      to {
+        visibility: visible
+      }
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate="">
+      body {
+        -webkit-animation: none;
+        -moz-animation: none;
+        -ms-animation: none;
+        animation: none
+      }
+      
+      
+      
+    </style>
+  </noscript>
 </head>
+<link rel="stylesheet" href="css/main.css">
 <body>
   <div id="dotsAnimate"></div>
   <!--include partials/_debag-->
   <div class="wrapper">
     <div class="logo-subscribe">
-      <div class="logo-part-1"><img src="images/svg/logo-part-1.svg" alt="logo"></div>
-      <div class="logo-animate"></div>
-      <div class="logo-part-618"><img src="images/svg/logo-part-618.svg" alt="logo"></div>
+      <div class="logo-pos">
+        <div class="logo-part-1"><img src="images/svg/logo-part-1.svg" alt="logo"></div>
+        <div class="logo-animate"></div>
+        <div class="logo-part-618"><img src="images/svg/logo-part-618.svg" alt="logo"></div>
+      </div>
     </div>
     <div class="subscribe">
       <div class="subscribe-main">
@@ -43,17 +115,12 @@
             <label for="checkbox-2">Спеціальні пропозиції від ‘1.618’ (раз в місяць)</label>
           </div>
         </form>
-        <div class="subscribe-button"><a class="button" href="#">Підписатися</a></div>
+        <div class="subscribe-button"><a class="button" href="index-thank-you.html">Підписатися</a></div>
       </div>
       <div class="navbar">
-        <div id="navbar">
-          <ul>
-            <li><a class="navigation selected" href="#">Закрити</a></li>
-          </ul>
-        </div>
+        <div id="navbar"><a class="navigation" href="#">Закрити</a></div>
       </div>
     </div>
-    <div class="add-place"></div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script><!-- GreenSock TweenMax -->

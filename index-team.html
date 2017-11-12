@@ -1,211 +1,144 @@
 <!DOCTYPE html>
-<html ⚡></html>
+<html></html>
 <head>
   <meta charset="UTF-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <!--meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')-->
   <title>1.618</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css">
-  <link rel="canonical" href="css/main.css">
-  <!--link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")-->
-  <style amp-boilerplate="">
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
-    
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-    
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-    
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-    
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-    
-    @keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-  </style>
-  <noscript>
-    <style amp-boilerplate="">
-      body {
-        -webkit-animation: none;
-        -moz-animation: none;
-        -ms-animation: none;
-        animation: none
-      }
-      
-      
-      
-    </style>
-  </noscript>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<link rel="stylesheet" href="css/main.css">
 <body>
   <div id="dotsAnimate"></div>
   <!--include partials/_debag-->
   <div class="wrapper">
-    <div class="logo">
-      <div class="logo-part-1"><img src="images/svg/logo-part-1.svg" alt="logo"></div>
-      <div class="logo-animate"></div>
+    <div class="logo-an">
+      <div class="logo-pos"><img class="logo-part-1" src="images/svg/logo-part-1.svg" alt="logo">
+        <div class="logo-animate"></div>
+      </div>
     </div>
     <div class="team-page">
       <div class="header">
-        <div class="team-header">
-          <h1>Команда 1.618</h1>
-          <p>Ми зорієнтовані на ефективність, професіоналізм, чесність, прозорість та відкритість.</p>
-        </div>
-        <div class="navbar">
-          <div class="navigation title" id="navbartitle">Меню</div>
-          <div id="navbar"><a class="navigation" href="index.html">Головна</a><a class="navigation nav-team" href="index-team.html">Команда</a><a class="navigation" href="index-portfolio.html">Портфоліо</a><a class="navigation" href="index-blog.html">Блог</a><a class="en-link" href="#">English version</a></div>
+        <div class="row">
+          <div class="text-header">
+            <h1>Команда 1.618</h1>
+            <p>Ми зорієнтовані на ефективність, професіоналізм, чесність, прозорість та відкритість.</p>
+          </div>
+          <div class="navbar">
+            <div class="navigation title" id="navbartitle">Меню</div>
+            <div id="navbar"><a class="navigation" href="index.html">Головна</a><a class="navigation nav-active" href="index-team.html">Команда</a><a class="navigation" href="index-portfolio.html">Портфоліо</a><a class="navigation" href="index-blog.html">Блог</a><a class="en-link" href="#">English version</a></div>
+          </div>
         </div>
       </div>
-      <div class="team-photo">
-        <div class="photo"><img src="images/command-page/team.jpg" alt="Photo Team" width="1300"></div>
+      <div class="team-photo"><img src="images/command-page/team-photo.jpg" alt="Photo Team"></div>
+      <div class="team-photo-items">
+        <div class="row">
+          <div class="col"><img src="images/command-page/oleksandr-hen.jpg" alt="Oleksandr Hen">
+            <div class="text-about">
+              <p class="text-prof">Засновник, архітектор</p>
+              <p class="text-name">Олександр<br>Гень</p>
+            </div>
+          </div>
+          <div class="col"><img src="images/command-page/andriy-rogulo.jpg" alt="Andriy Rogulo">
+            <div class="text-about">
+              <p class="text-prof">Засновник</p>
+              <p class="text-name">Андрій<br>Рожило</p>
+            </div>
+          </div>
+          <div class="col"><img src="images/command-page/oksana-kocuba.jpg" alt="Oksana Kocuba">
+            <div class="text-about">
+              <p class="text-prof">Архітектор</p>
+              <p class="text-name">Оксана<br>Коцюруба</p>
+            </div>
+          </div>
+          <div class="col"><img src="images/command-page/kateruna-nikitina.jpg" alt="Kateruna Nikitina">
+            <div class="text-about">
+              <p class="text-prof">Архітектор</p>
+              <p class="text-name">Катерина<br>Нікітіна</p>
+            </div>
+          </div>
+          <div class="col"><img src="images/command-page/nela-manduluk.jpg" alt="Nela Manduluk">
+            <div class="text-about">
+              <p class="text-prof">Менеджер</p>
+              <p class="text-name">Неля<br>Мандилюк</p>
+            </div>
+          </div>
+          <div class="col"><img src="images/command-page/bohdan-zaharkiv.jpg" alt="Bohdan Zaharkiv">
+            <div class="text-about">
+              <p class="text-prof">Надійний майстер</p>
+              <p class="text-name">Богдан<br>Захарків</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="team-main">
-        <div class="team-photo-items">
-          <div class="items">
-            <div class="item"><img src="images/command-page/oleksandr-hen.jpg" alt="Oleksandr Hen">
-              <div class="text-about">
-                <p class="text-prof">Засновник, архітектор</p>
-                <p class="text-name">Олександр<br>Гень</p>
-              </div>
-            </div>
-            <div class="item"><img src="images/command-page/andriy-rogulo.jpg" alt="Andriy Rogulo">
-              <div class="text-about">
-                <p class="text-prof">Засновник</p>
-                <p class="text-name">Андрій<br>Рожило</p>
-              </div>
-            </div>
-            <div class="item"><img src="images/command-page/oksana-kocuba.jpg" alt="Oksana Kocuba">
-              <div class="text-about">
-                <p class="text-prof">Архітектор</p>
-                <p class="text-name">Оксана<br>Коцюруба</p>
-              </div>
-            </div>
-            <div class="item"><img src="images/command-page/kateruna-nikitina.jpg" alt="Kateruna Nikitina">
-              <div class="text-about">
-                <p class="text-prof">Архітектор</p>
-                <p class="text-name">Катерина<br>Нікітіна</p>
-              </div>
-            </div>
-            <div class="item"><img src="images/command-page/nela-manduluk.jpg" alt="Nela Manduluk">
-              <div class="text-about">
-                <p class="text-prof">Менеджер</p>
-                <p class="text-name">Неля<br>Мандилюк</p>
-              </div>
-            </div>
-            <div class="item"><img src="images/command-page/bohdan-zaharkiv.jpg" alt="Bohdan Zaharkiv">
-              <div class="text-about">
-                <p class="text-prof">Надійний майстер</p>
-                <p class="text-name">Богдан<br>Захарків</p>
-              </div>
-            </div>
-          </div>
+      <div class="team-text-inform">
+        <div class="text-inform">
+          <h1>Хочеш стати одним із нас?</h1>
+          <p>Ми шукаємо талановитих. Приєднуйся!</p>
         </div>
-        <div class="team-text-inform">
-          <div class="text-inform">
-            <h1>Хочеш стати одним із нас?</h1>
-            <p>Ми шукаємо талановитих. Приєднуйся!</p>
+      </div>
+      <div class="team-article">
+        <div class="row">
+          <div class="col">
+            <h2>Архітектор</h2>
+            <p>Візьми участь у створенні іноваційних проектів. Втілюй найсміливіші ідеї.</p>
           </div>
-        </div>
-        <div class="team-article">
-          <div class="items">
-            <div class="item">
-              <h2>Архітектор</h2>
-              <p>Візьми участь у створенні іноваційних проектів. Втілюй найсміливіші ідеї.</p>
-            </div>
-            <div class="item">
-              <h2>Візуалізатор</h2>
-              <p>Нам потрібні люди, що можуть створити зображення які важко відрізнити від реальних.</p>
-            </div>
-            <div class="item">
-              <h2>Менеджер</h2>
-              <p>У нас велика кількість проектів з якими ми потребуємо постійної допомоги менеджера.</p>
-            </div>
-            <div class="item">
-              <h2>Надійний майстер</h2>
-              <p>Шукаємо надійну людину для втілення наших проектів. Пропонуємо довготривалу співпрацю.</p>
-            </div>
-            <div class="team-button"><a class="button" href="#">Приєднатися до команди</a></div>
+          <div class="col">
+            <h2>Візуалізатор</h2>
+            <p>Нам потрібні люди, що можуть створити зображення які важко відрізнити від реальних.</p>
           </div>
+          <div class="col">
+            <h2>Менеджер</h2>
+            <p>У нас велика кількість проектів з якими ми потребуємо постійної допомоги менеджера.</p>
+          </div>
+          <div class="col">
+            <h2>Надійний майстер</h2>
+            <p>Шукаємо надійну людину для втілення наших проектів. Пропонуємо довготривалу співпрацю.</p>
+          </div>
+          <div class="team-button"><a class="button" href="#">Приєднатися до команди</a></div>
         </div>
       </div>
     </div>
   </div>
   <div class="footer">
     <div class="wrapper">
-      <div class="logofoooter" id="logofooter">
+      <div class="logo-footer">
         <div class="logo-footer-pos"><img class="logo-part-2" src="images/svg/logo-part-white.svg" alt="logo">
           <div class="logo-animate"></div>
         </div>
       </div>
       <div class="footer-head">
-        <div class="footer-items-collection">
-          <div class="footer-text">
-            <h1>Архітектурно-будівельна<br>майстерня ‘1.618’</h1>
+        <div class="row">
+          <div class="footer-items-collection">
+            <div class="footer-text">
+              <h1>Архітектурно-будівельна<br>майстерня ‘1.618’</h1>
+            </div>
+            <div class="footer-item-columns">
+              <div class="items">
+                <div class="item">
+                  <h2>Адреса:</h2><a class="map" href="https://goo.gl/maps/gHx7dZnn7sR2" target="blank">м. Львів, вул. Жовківська 14</a>
+                </div>
+                <div class="item">
+                  <h2>E-mail:</h2><a href="mailto:ok@one618.pro">ok@one618.pro</a>
+                </div>
+              </div>
+              <div class="items">
+                <div class="item">
+                  <h2>Олександр Гень</h2><a href="tel:+380979035161">097 903 51 61</a>
+                </div>
+                <div class="item">
+                  <h2>Андрій Рожило</h2><a href="tel:+380505404900">050 540 49 00</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="footer-item-columns">
-            <div class="items">
-              <div class="item">
-                <h2>Адреса:</h2><a class="map" href="https://goo.gl/maps/gHx7dZnn7sR2" target="blank">м. Львів, вул. Жовківська 14</a>
-              </div>
-              <div class="item">
-                <h2>E-mail:</h2><a href="mailto:ok@one618.pro">ok@one618.pro</a>
-              </div>
-            </div>
-            <div class="items">
-              <div class="item">
-                <h2>Олександр Гень</h2><a href="tel:+380979035161">097 903 51 61</a>
-              </div>
-              <div class="item">
-                <h2>Андрій Рожило</h2><a href="tel:+380505404900">050 540 49 00</a>
-              </div>
-            </div>
+          <div class="footer-nav">
+            <div id="navbar"><a class="navigation" href="index.html">Головна</a><a class="navigation" href="index-team.html">Команда</a><a class="navigation" href="index-portfolio.html">Портфоліо</a><a class="navigation" href="index-blog.html">Блог</a><a class="en-link" href="#">English version</a></div>
           </div>
         </div>
       </div>
       <div class="footer-logo-down">
         <div class="logoline-618"></div>
-        <!--img.logo-618(src="images/svg/618.svg", alt="logo")-->
       </div>
       <div class="footer-link-collections">
         <div class="footer-links">

@@ -1,135 +1,24 @@
-// $(document).ready(function() {
-//   $(document).scroll(function () {
-//     var scroll = $(this).scrollTop();
-//     var topDist = $(".navbar").position();
-//     if (scroll > topDist.top) {
-//       $('nav').css({"position":"fixed","right":"0"});
-//     } else {
-//       $('nav').css({"position":"static","right":"auto"});
-//     }
-//   });
-// });
-// (function(){
-//
-//   var lastScrollTop = 0;
-//
-//   $(window).scroll(function(event){
-//
-//     var st = $(this).scrollTop();
-//
-//     /*
-//     *
-//     *   MENU
-//     *
-//     */
-//
-//     var menu_bottom_line_show = $('.footer').position().top - $(window).height()/4;
-//
-//     if(st  > menu_bottom_line_show){
-//
-//       $('#navbartitle').show();
-//
-//     }else{
-//
-//       if (st > lastScrollTop){
-//         // downscroll code
-//         $('#navbartitle').hide(500);
-//       } else {
-//         // upscroll code
-//         $('#navbartitle').show(300);
-//       }
-//
-//     }
-//
-//     /*
-//      *  Always hide menu list on scroll
-//      *
-//      */
-//
-//     $('#navbar').hide(500);
-//
-//
-//
-//     lastScrollTop = st;
-//
-//
-//
-//
-//
-//
-//   });
-//   /*
-//    *
-//    *  Menu button
-//    *
-//    *
-//    */
-//
-//   $('#navbartitle').click(function(e){
-//     $('#navbar').show(500);
-//     $('#navbartitle').hide(500);
-//
-//     var dotsOpacity = $('#dotsAnimate').css("opacity");
-//
-//     console.log(dotsOpacity);
-//
-//     if(dotsOpacity < 1) {
-//       $('#dotsAnimate').css({opacity: 1})
-//     }
-//
-//
-//   });
-//
-//   /**
-//    *
-//    *
-//    *
-//    * chenge color menu* */
-//   // $('.navigation').click(function () {
-//   //   if ($(this).hasClass('changeColorText')) {
-//   //     $(this).removeClass('changeColorText');
-//   //   } else {
-//   //     $('.navigation').removeClass('changeColorText');
-//   //     $(this).addClass('changeColorText');
-//   //
-//   //   }
-//   // });
-// })();
 
 
-var wordsfirsr = [
-  ' зростаєте',
-  ' відпочиваєте',
-  ' спите',
-  ' радієте',
-  ' мрієте'
-];
+
 
 $(function () {
   count = 0;
   setInterval(function () {
     count++;
-    $("#changeWords_1").fadeOut(500, function () {
-      $(this).html(wordsfirsr[count % wordsfirsr.length]).fadeIn(500);
+    $("#changeWords_1").fadeOut(1000, function () {
+      $(this).html(window.headervars.line1[count % window.headervars.line1.length]).fadeIn(1000);
     });
   }, 3000);
 });
 
 
-var wordssecond = [
-  ' втілюємо',
-  ' працюємо',
-  ' ремонтуємо',
-  ' будуємо',
-  ' проектуємо'
-];
-
 $(function () {
   count = 0;
   setInterval(function () {
     count++;
-    $("#changeWords_2").fadeOut(500, function () {
-      $(this).html(wordssecond[count % wordssecond.length]).fadeIn(500);
+    $("#changeWords_2").fadeOut(1000, function () {
+      $(this).html(window.headervars.line2[count % window.headervars.line2.length]).fadeIn(1000);
     });
   }, 3000);
 });
@@ -230,53 +119,61 @@ $(document).ready(function(){
      */
 
     $('#navbartitle').click(function(e){
-      $('#navbar').show(500);
-      $('#navbartitle').hide(500);
 
+      // BEGIN munu fde-in to main word and + navbar animate opacity show
+      var menuword = [('<a href="index.html">Головна</a>')];
+
+      $("#navbartitle").fadeIn(function () {
+        $(this).html(menuword[count % menuword.length]);
+      });
+
+      $('#navbar').css({opacity: 1}) .css('pointer-events', 'auto');
+      // AND munu fde-in to main word and + navbar animate opacity show
+
+
+      // BEGIN dots-show onclick
       var dotsOpacity = $('#dotsAnimate').css("opacity");
-
-      console.log(dotsOpacity);
-
       if(dotsOpacity < 1) {
         $('#dotsAnimate').css({opacity: 1})
       }
+      });
+    // AND dots-show onclick
 
 
-  });
+    //BEGIN sckrollTOP button animate
+    var scrollTop = $(".scrollTop");
 
-  /**
-   *
-   *
-   *
-   * chenge color menu* */
-  $('.navigation').click(function () {
-    if ($(this).hasClass('changeColorText')) {
-      $(this).removeClass('changeColorText');
-    } else {
-      $('.navigation').removeClass('changeColorText');
-      $(this).addClass('changeColorText');
+    $(window).scroll(function () {
+      var topPos = $(this).scrollTop();
 
-    }
-  });
+      if (topPos > 800) {
+        $(scrollTop).css("opacity", "1");
+      } else {
+        $(scrollTop).css("opacity", "0");
+      }
+    });
+
+    $(scrollTop).click(function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+    //AND sckrollTOP button animate
 
 
 
 
-  window.addEventListener("resize", function(){
 
-      init();
-
-  });
-
+  window.addEventListener("resize", function(){init();});
   init();
-
 
   function init(){
     menu_bottom_line_show = $('.footer').position().top - $(window).height();
     navbartitle.duration(menu_bottom_line_show);
 
     // console.log('dur!!',navbartitle.duration());
-    
+
     $('.footer .logo-animate').height($('.footer .footer-logo-down').position().top + $('.footer .logo-animate').width());
 
     var dot = [];
@@ -420,24 +317,17 @@ $(window, document, undefined).ready(function() {
 // smartgrid('style/modules', settings);
 
 
-
 $(document).ready(function(){
-
-
-  var owl = $('.owl-carousel'),
-      prev = $("#left"),
-      next = $("#right");
-
+  var owl = $(".owl-carousel");
   owl.owlCarousel({
-        items : 4,
+        items: 1,
         stagePadding: '60',
-        touchDrag  : false,
-        mouseDrag  : false,
+        touchDrag: false,
+        mouseDrag: false,
         smartSpeed: 20,
         animateOut: 'bringOut',
         animateIn: 'bringIn',
         dots: false,
-        loop: true,
         lazyLoad: true,
         margin: 30,
         nav:true,
@@ -447,6 +337,7 @@ $(document).ready(function(){
                 items:1,
                 stagePadding: '25',
                 margin: 10
+
             },
             768:{
                 items:1,
